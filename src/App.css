@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+body{
+  background-color: blueviolet;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login_form{
+  background-color: cornflowerblue;
+  color: black;
+  width: 50%;
+  padding: 20px;
+  margin:auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .my_form{
+  width: 50%;
+  margin: auto;
+  border: 1px solid blue;
+  padding: 30px;
+  margin-top:20px;
+  border-radius: 20px;
+  background-color: brown;
+} */
+.course_section{
+  padding:20px;
+  margin: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leftside{
+  /* border:1px solid; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  text-align: center;      
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:20px;
+  min-height: 300px;
 }
+.rightside{
+  /* border:1px solid; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  /* text-align: center;       */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:20px;
+  min-height: 300px;
+  background-color: brown;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
