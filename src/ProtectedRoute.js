@@ -8,7 +8,7 @@ const ProtectedRoute = ({ children, path, ...props }) => {
     children
   ) : (
     <>
-       <Navigate to="/login" replace="true" />
+       <Navigate to="/login-form" replace="true" />
     </>
   );
 };
