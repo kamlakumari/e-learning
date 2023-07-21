@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Form, Button } from "react-bootstrap";
+// import { Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate,  } from "react-router-dom";
 
 const LoginForm = () => {
   let navigate = useNavigate();
     useEffect(() => {
     let isLogin = localStorage.getItem("login");
-    if (isLogin == "true") {
+    if (isLogin === "true") {
       navigate("/");
     }
-  }, []);
+  });
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -25,7 +25,7 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email == "admin@gmail.com" && password == "12345") {
+    if (email === "admin@gmail.com" && password === "12345") {
       alert("succesully login");
       localStorage.setItem("login", true);
       navigate("/course");

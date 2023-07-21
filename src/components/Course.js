@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { myContext } from "../App";
 
 const Course = () => {
@@ -89,7 +89,7 @@ const Course = () => {
                   <img height={100}
                     class="card-img-top"
                     src={"/img/" + data.imageUrl}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                   <div class="card-body">
                     <h5 class="card-title">{data.title}</h5>
