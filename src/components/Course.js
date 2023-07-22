@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 // import { Link } from "react-router-dom";
 import { myContext } from "../App";
+import {Link} from "react-router-dom"
 
 const Course = () => {
   const coursesData =useContext(myContext)
@@ -95,9 +96,11 @@ const Course = () => {
                     <h5 class="card-title">{data.title}</h5>
                     <p class="card-text">{data.description}</p>
                     <p>Duration : {data.duration}</p>
-                    <a href="#" class="btn btn-primary">
+                    <Link to="/">
+                    <a class="btn btn-primary">
                       View details
                     </a>
+                    </Link>
                   </div>
                 </div>
               </div>
